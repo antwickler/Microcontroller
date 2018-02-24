@@ -7,36 +7,36 @@
 .include "m328Pdef.inc"
 
 .DEF	VAR_A = R16
-.DEF	VAR_B = R17
-.DEF	VAR_C = R18
-.DEF	VAR_D = R19
-.DEF	VAR_E = R20
-.DEF	VAR_F = R21
-.DEF	VAR_G = R22
-.DEF	VAR_H = R23
+.DEF	TEMP = R17
 
 .CSEG
 .ORG	0x00
-	rjmp	RESET
-
-RESET:	ldi	VAR_A, 20
-	ldi	VAR_B, 32
-	ldi	VAR_C, 70
-	ldi	VAR_D, 3
-	mov	VAR_F, VAR_C
-	sub	VAR_F, VAR_D
-	mov	VAR_H, VAR_A
-	add	VAR_H, VAR_B
-	mov	VAR_C, VAR_H
-	sub	VAR_C, VAR_F
-	mov	VAR_E, VAR_C
-	subi	VAR_E, 10
-	inc	VAR_B
-	mov	VAR_G, VAR_C
-	sub	VAR_D, VAR_E
-	dec	VAR_A
+	ldi	VAR_A, 0xFF
+	out	DDRB, VAR_A
+	ldi	VAR_A, 0x00
+	out	DDRC, VAR_A
+	ldi	TEMP, 0x00
 	
-END:	rjmp	END
+MAIN:	in	VAR_A, PINC
+	andi	VAR_A, 0x70	; 0111 0000
+	swap	VAR_A		; 0000 0111
+	ldi	ZL, low(TB_LOGIC*2)
+	ldi	ZH, high(TB_LOGIC*2)
+	add	ZL, VAR_A
+	adc	ZH, TEMP
+	lpm	R10, Z
+	
+	out	PORTB, R10
+	rjmp	MAIN
+	
+TB_LOGIC:	.DB 0b0000 0000,
+		.DB 0b0000 0001,
+		.DB 0b0000 0011,
+		.DB 0b0000 0111,
+		.DB 0b0000 1111,
+		.DB 0b0001 1111,
+		.DB 0b0011 1111,
+		.DB 0b0111 1111
 
 .DSEG
 .ESEG

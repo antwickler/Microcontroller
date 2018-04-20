@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\Lab Micro 22-02-61\program19\program19\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Lab Micro 22-02-61\program19\program19\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Lab Micro 22-02-61\program19\program19\Debug\program19.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>program19.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>program19.map</FILE>
+  <FILE>program19.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <WHILE><FILE>D:\Lab Micro 22-02-61\program19\program19\main.asm</FILE><LINE>23</LINE></WHILE>
+  <LOOP><FILE>D:\Lab Micro 22-02-61\program19\program19\main.asm</FILE><LINE>27</LINE></LOOP>
+  <ENDLOOP><FILE>D:\Lab Micro 22-02-61\program19\program19\main.asm</FILE><LINE>32</LINE></ENDLOOP>
+  <END><FILE>D:\Lab Micro 22-02-61\program19\program19\main.asm</FILE><LINE>34</LINE></END>
+ </LABELS>
+</ASSEMBLER_INFO>

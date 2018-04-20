@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.6</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\Lab Micro 22-02-61\program17\program17\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Lab Micro 22-02-61\program17\program17\Debug\program17.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>program17.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>program17.map</FILE>
+  <FILE>program17.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <FOR><FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</FILE><LINE>22</LINE></FOR>
+  <LOOP><FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</FILE><LINE>26</LINE></LOOP>
+  <ENDLOOP><FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</FILE><LINE>34</LINE></ENDLOOP>
+  <ENDIF><FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</FILE><LINE>31</LINE></ENDIF>
+  <END><FILE>D:\Lab Micro 22-02-61\program17\program17\main.asm</FILE><LINE>36</LINE></END>
+ </LABELS>
+</ASSEMBLER_INFO>
